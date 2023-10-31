@@ -8,3 +8,7 @@ edition = "2021"
 [dependencies]
 
 rusqlite = "0.29.0"
+
+[lib]
+name = "DBFunc"
+path = "src/lib.rs"
