@@ -1,3 +1,4 @@
+[![Rustfmt](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml)
 ## SQLite CRUD with Rust 
 
 This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read, Update, Delete) on a **SQLite** database. 
