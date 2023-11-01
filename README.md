@@ -14,8 +14,9 @@ Below is an overview of the files in this project:
    <br>c. _./sql/main.rs_: Main script executing the following:
    
       <br>         i. Build a SQLite database _Transaction.db_.
-      <br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
-      <br>         iii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*.
+      <br>         iii. **Insert** 3 rows of values into the *Customer* table. 
+      <br>         iv. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
    
       **Original Query Result**
 
@@ -25,8 +26,8 @@ Below is an overview of the files in this project:
       |002| Devin | Female |
       |003| Sharon | Female |
 
-      <br>         iv. **Update** the value of the *sex* column of the **first row**.
-      <br>         v. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         v. **Update** the value of the *sex* column of the **first row**.
+      <br>         vi. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
    
       ***Updated*** **Query Result**
 
@@ -36,8 +37,8 @@ Below is an overview of the files in this project:
       |002| Devin | Female |
       |003| Sharon | Female |
 
-      <br>         vi. **Delete** the **first row** the value of the *sex* column of the first row.
-      <br>         vii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         vii. **Delete** the **first row** the value of the *sex* column of the first row.
+      <br>         viii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
 
       **Query Result After** ***Deletion***
 
@@ -46,16 +47,16 @@ Below is an overview of the files in this project:
       |002| Devin | Female |
       |003| Sharon | Female |
 
-      <br>         viii. Drop the table to avoid data accumulation.
+      <br>         ix. Drop the table to avoid data accumulation.
    
-2. **Rust executable binary file**:
+3. **Rust executable binary file**:
   <br>d. _.RustSQLCRUD_YCLiu/sql/target/release/sql_: the released binary file executable using command line tool.
 
-3. **Other files for development environment settings**
+4. **Other files for development environment settings**
   <br>e. _.devcontainer_: set up the environment for development.
   <br>f. _.gitignore_: specify file names to ignore (using Github rust default except for *target*, the executable).
 
-4. **Github actions setup for continuous integration**
+5. **Github actions setup for continuous integration**
   <br>g. _.github/workflows/~.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **releasing packages** (_release.yml_), **formatting** (_format.yml_), **linting** (_lint.yml_), and **testing** (_test.yml_) would be executed in order (as specified in _Makefile_). 
 
 5. **Description of the project**
