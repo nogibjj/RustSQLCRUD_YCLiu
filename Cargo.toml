@@ -11,4 +11,4 @@ rusqlite = "0.29.0"
 
 [lib]
 name = "DBFunc"
-path = "sql/src/lib.rs"
+path = "src/lib.rs"

@@ -12,7 +12,7 @@ pub fn create(conn: &Connection) -> Result<()> {
     
     conn.execute(
         "CREATE TABLE IF NOT EXISTS Customer (
-            cust_id TEXT NOT NULL UNIQUE,
+            cust_id TEXT NOT NULL,
             name TEXT NOT NULL,
             sex TEXT NOT NULL
         )",

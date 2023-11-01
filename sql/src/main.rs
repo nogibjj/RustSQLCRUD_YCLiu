@@ -9,7 +9,7 @@ fn main() {
 }
 
 fn run() -> Result<(), rusqlite::Error> {
-    let conn = Connection::open("Transactions.db")?;
+    let conn = Connection::open("Transactions.db")?;  
 
     println!("Creating table...");
     DBFunc::create(&conn)?;
