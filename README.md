@@ -46,7 +46,8 @@ Below is an overview of the files in this project:
       |002| Devin | Female |
       |003| Sharon | Female |
 
-
+      <br>         viii. Drop the table to avoid data accumulation.
+   
 2. **Rust executable binary file**:
   <br>d. _.RustSQLCRUD_YCLiu/sql/target/release/sql_: the released binary file executable using command line tool.
 
