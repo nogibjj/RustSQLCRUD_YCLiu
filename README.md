@@ -1,5 +1,5 @@
 [![Build binary release](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/release.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/release.yml)
-[![Rustfmt](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml)
+[![Format](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/format.yml)
 [![Clippy](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/lint.yml)
 [![Test](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml)
 ## SQLite CRUD with Rust 
