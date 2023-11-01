@@ -1,3 +1,7 @@
+[![Build binary release](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/release.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/release.yml)
+[![Rustfmt](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/rustfmt.yml)
+[![Clippy](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/lint.yml)
+[![Test](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml)
 ## SQLite CRUD with Rust 
 
 This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read, Update, Delete) on a **SQLite** database. 
