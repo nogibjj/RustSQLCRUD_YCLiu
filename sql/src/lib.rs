@@ -68,3 +68,21 @@ pub fn drop(conn: &Connection) -> Result<()> {
     conn.execute("DROP TABLE IF EXISTS Customer", [])?;
     Ok(())
 }
+
+mod tests {
+    use super::*;
+    use rusqlite::Result;
+
+    #[test]
+    fn test_create() -> Result<()> {
+        let conn = Connection::open_in_memory()?;
+        create(&conn)?;
+        let table_names: Vec<String> = conn
+            .prepare("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")?
+            .query_map([], |row| row.get(0))?
+            .collect::<Result<Vec<String>>>()?;
+        assert_eq!(table_names, vec!["Customer"]);
+        Ok(())
+    }
+
+}
