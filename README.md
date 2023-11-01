@@ -13,38 +13,38 @@ Below is an overview of the files in this project:
    <br>b. _./sql/lib.rs_: Define functions used in _main.rs_ for database manipulation.
    <br>c. _./sql/main.rs_: Main script executing the following:
    
-   <br>         i. Build a SQLite database _Transaction.db_.
-   <br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
-   <br>         iii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         i. Build a SQLite database _Transaction.db_.
+      <br>         ii. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
+      <br>         iii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
    
-**Original Query Result**
+      **Original Query Result**
 
-| cust_id | name | sex |
-|---|---|---|
-|001| John | Male |
-|002| Devin | Female |
-|003| Sharon | Female |
+      | cust_id | name | sex |
+      |---|---|---|
+      |001| John | Male |
+      |002| Devin | Female |
+      |003| Sharon | Female |
 
-   <br>         iv. **Update** the value of the *sex* column of the **first row**.
-   <br>         v. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         iv. **Update** the value of the *sex* column of the **first row**.
+      <br>         v. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
    
-***Updated*** **Query Result**
+      ***Updated*** **Query Result**
 
-| cust_id | name | sex |
-|---|---|---|
-|001| John | **Unknown** |
-|002| Devin | Female |
-|003| Sharon | Female |
+      | cust_id | name | sex |
+      |---|---|---|
+      |001| John | **Unknown** |
+      |002| Devin | Female |
+      |003| Sharon | Female |
 
-   <br>         vi. **Delete** the **first row** the value of the *sex* column of the first row.
-   <br>         vii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+      <br>         vi. **Delete** the **first row** the value of the *sex* column of the first row.
+      <br>         vii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
 
-**Query Result After** ***Deletion***
+      **Query Result After** ***Deletion***
 
-| cust_id | name | sex |
-|---|---|---|
-|002| Devin | Female |
-|003| Sharon | Female |
+      | cust_id | name | sex |
+      |---|---|---|
+      |002| Devin | Female |
+      |003| Sharon | Female |
 
 
 2. **Rust executable binary file**:
