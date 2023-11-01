@@ -4,7 +4,7 @@
 [![Test](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/RustSQLCRUD_YCLiu/actions/workflows/test.yml)
 ## SQLite CRUD with Rust 
 
-This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read, Update, Delete) on a **SQLite** database. 
+This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read, Update, Delete) on a **SQLite** database. A **video overview of the project** can be found [here](https://youtu.be/vxZP4bJgiYs)  
 
 Below is an overview of the files in this project:
 
