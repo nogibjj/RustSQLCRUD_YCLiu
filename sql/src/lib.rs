@@ -63,3 +63,8 @@ pub fn delete(conn: &Connection) -> Result<()> {
     )?;
     Ok(())
 }
+
+pub fn drop(conn: &Connection) -> Result<()> {
+    conn.execute("DROP TABLE IF EXISTS Customer", [])?;
+    Ok(())
+}

@@ -31,6 +31,8 @@ fn run() -> Result<(), rusqlite::Error> {
 
     println!("Querying data...");
     DBFunc::query(&conn)?;    
+    
+    DBFunc::drop(&conn)?;    
 
     Ok(())
 }
