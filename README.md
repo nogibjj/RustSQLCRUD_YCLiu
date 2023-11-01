@@ -9,7 +9,7 @@ This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read,
 Below is an overview of the files in this project:
 
 1. **Main files for database manipulation** : 
-   <br>a. _Cargo.toml_: Specify library names and **depencies used in the project**.
+   <br>a. _Cargo.toml_: Specify library names and ***depencies used in the project***.
    <br>b. _./sql/lib.rs_: Define functions used in _main.rs_ for database manipulation.
    <br>c. _./sql/main.rs_: Main script executing the following:
    
