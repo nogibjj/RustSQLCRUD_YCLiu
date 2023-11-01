@@ -92,6 +92,30 @@ mod tests {
         insert(&conn)?;
         let count: i64 = conn.query_row("SELECT COUNT(*) FROM Customer", [], |row| row.get(0))?;
         assert_eq!(count, 3);
+        Ok(())       
+    }
+
+    #[test]
+    fn test_update() -> Result<()> {
+        let conn = Connection::open_in_memory()?;
+        create(&conn)?;
+        insert(&conn)?;
+        update(&conn)?;
+        let val: String = conn.query_row("SELECT sex FROM Customer WHERE cust_id = '001'", [], |row| row.get(0))?;
+        assert_eq!(val, "Unknown");
+        Ok(())
+    }
+    #[test]
+    fn test_delete() -> Result<()> {
+        let conn = Connection::open_in_memory()?;
+        create(&conn)?;
+        insert(&conn)?;
+        update(&conn)?;
+        delete(&conn)?;
+        let id: String = conn.query_row("SELECT cust_id FROM Customer LIMIT 1", [], |row| row.get(0))?;
+        assert_eq!(id, "002");
+        let count: i64 = conn.query_row("SELECT COUNT(*) FROM Customer", [], |row| row.get(0))?;
+        assert_eq!(count, 2);        
         Ok(())
     }
 
