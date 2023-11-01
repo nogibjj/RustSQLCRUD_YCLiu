@@ -36,8 +36,8 @@ Below is an overview of the files in this project:
 |002| Devin | Female |
 |003| Sharon | Female |
 
-<br>         vi. **Delete** the **first row** the value of the *sex* column of the first row.
-<br>         vii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
+   <br>         vi. **Delete** the **first row** the value of the *sex* column of the first row.
+   <br>         vii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
 
 **Query Result After** ***Deletion***
 
