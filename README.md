@@ -50,7 +50,7 @@ Below is an overview of the files in this project:
       <br>         ix. Drop the table to avoid data accumulation.
    
 3. **Rust executable binary file**:
-  <br>d. _.RustSQLCRUD_YCLiu/sql/target/release/sql_: the released binary file executable using command line tool.
+  <br>d. _./sql/target/release/sql_: the released binary file executable using command line tool.
 
 4. **Other files for development environment settings**
   <br>e. _.devcontainer_: set up the environment for development.
