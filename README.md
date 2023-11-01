@@ -11,7 +11,8 @@ Below is an overview of the files in this project:
 1. **Main files for database manipulation** : 
    <br>a. _Cargo.toml_: Specify library names and **depencies used in the project**.
    <br>b. _./sql/lib.rs_: Define functions used in _main.rs_ for database manipulation.
-   <br>c. _./sql/main.rs_: Main script executing the following: 
+   <br>c. _./sql/main.rs_: Main script executing the following:
+   
    <br>         1. Build a SQLite database _Transaction.db_.
    <br>         2. Create a table named *Customer*, with the following columns: *cust_id*, *name*, *sex*. Below is the content of the resulted table.
    <br>         3. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
