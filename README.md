@@ -37,7 +37,7 @@ Below is an overview of the files in this project:
       |002| Devin | Female |
       |003| Sharon | Female |
 
-      <br>         vii. **Delete** the **first row** the value of the *sex* column of the first row.
+      <br>         vii. **Delete** the **first row** of _Customer_ table, where _cust_id_ equals 001.
       <br>         viii. **Read** (*Select*) **all columns and rows** of the *Customer* table and display the result:
 
       **Query Result After** ***Deletion***
