@@ -8,7 +8,7 @@ This repository demonstrates using **rust** a to conduct **CRUD** (Create, Read,
 
 Below is an overview of the files in this project:
 
-1. **Main functions** : 
+1. **Main files for database manipulation** : 
    <br>a. _Cargo.toml_: Specify library names and **depencies used in the project**.
    <br>b. _./sql/lib.rs_: Define functions used in _main.rs_ for database manipulation.
    <br>c. _./sql/main.rs_: Main script executing the following: 
@@ -47,17 +47,17 @@ Below is an overview of the files in this project:
 |003| Sharon | Female |
 
 
-3. **Rust executable binary file**:
-  <br>d. _.devcontainer_: set up the environment for development. 
+2. **Rust executable binary file**:
+  <br>d. _.RustSQLCRUD_YCLiu/sql/target/release/sql_: the released binary file executable using command line tool.
 
-5. **Other files for development environment settings**
+3. **Other files for development environment settings**
   <br>e. _.devcontainer_: set up the environment for development.
   <br>f. _.gitignore_: specify file names to ignore (using Github rust default except for *target*, the executable).
 
-6. **Github actions setup for continuous integration**
+4. **Github actions setup for continuous integration**
   <br>g. _.github/workflows/~.yml_: Quality control actions are triggered when pushed/ pulled to main branch. After setting up the environment, actions of **releasing packages** (_release.yml_), **formatting** (_format.yml_), **linting** (_lint.yml_), and **testing** (_test.yml_) would be executed in order (as specified in _Makefile_). 
 
-7. **Description of the project**
+5. **Description of the project**
    <br>h. _README.md_: THIS FILE, explaining the purpose and structure of the directory, with visualized example output.
 
-8. **Note on the use of Copilot**: Copilot did not help much for this project. When translated from python to rust, the code provided did not work well.
+6. **Note on the use of Copilot**: _Copilot did not help much_ for this project. When translated from python to rust, the code provided did not work well.
