@@ -85,4 +85,15 @@ mod tests {
         Ok(())
     }
 
+    #[test]
+    fn test_insert() -> Result<()> {
+        let conn = Connection::open_in_memory()?;
+        create(&conn)?;
+        insert(&conn)?;
+        let count: i64 = conn.query_row("SELECT COUNT(*) FROM Customer", [], |row| row.get(0))?;
+        assert_eq!(count, 3);
+        Ok(())
+    }
+
+
 }
